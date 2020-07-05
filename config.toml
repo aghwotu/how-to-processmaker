@@ -1,0 +1,15 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "ProcessMaker Code Snippets"
+# Change the default theme
+theme = "learn-theme"
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+[params]
+# Change default color scheme with a variant one. Can be "red", "blue", "green".
+#themeVariant = "blue"
+[[menu.shortcuts]]
+name = "Maintained by Aghwotu Ovuoke"
+identifier = "twitter"
+url = "https://twitter.com/ediri_aghwotu"
