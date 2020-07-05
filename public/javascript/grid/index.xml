@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grid on ProcessMaker Code Snippets</title>
+    <link>http://example.org/javascript/grid/</link>
+    <description>Recent content in Grid on ProcessMaker Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Jul 2020 14:23:38 +0100</lastBuildDate>
+    
+	<atom:link href="http://example.org/javascript/grid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disable Grid Column</title>
+      <link>http://example.org/javascript/grid/disable-grid-column/</link>
+      <pubDate>Sun, 05 Jul 2020 14:55:11 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/disable-grid-column/</guid>
+      <description>Disable a grid column function disableGridColumn(gridId, gridColumnId) { let gridRows = $(&amp;#34;#&amp;#34; + gridId).getNumberRows(); for (i = 1; i &amp;lt;= gridRows; i++) { $(&amp;#34;#form\\[&amp;#34; + gridId + &amp;#34;\\]\\[&amp;#34; +i+ &amp;#34;\\]\\[&amp;#34; + gridColumnId + &amp;#34;\\]&amp;#34;).attr(&amp;#34;disabled&amp;#34;, true); } } </description>
+    </item>
+    
+    <item>
+      <title>Enable Grid Column</title>
+      <link>http://example.org/javascript/grid/enable-grid-column/</link>
+      <pubDate>Sun, 05 Jul 2020 14:54:29 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/enable-grid-column/</guid>
+      <description>Enable a grid column function enableGridColumn(gridId, gridColumnId) { let gridRows = $(&amp;#34;#&amp;#34; + gridId).getNumberRows(); for (i = 1; i &amp;lt;= gridRows; i++) { $(&amp;#34;#form\\[&amp;#34; + gridId + &amp;#34;\\]\\[&amp;#34; +i+ &amp;#34;\\]\\[&amp;#34; + gridColumnId + &amp;#34;\\]&amp;#34;).attr(&amp;#34;disabled&amp;#34;, false); } } function enableGridColumn(gridId, gridColumnId) { let numberOfGrid = $(&amp;#34;#&amp;#34; + gridId).getNumberRows(); for (let index = 1; index &amp;lt;= numberOfGrid; index++) { $(&amp;#34;#&amp;#34; + gridId).find(&amp;#34;#&amp;#34;+ gridId +&amp;#34;-body&amp;#34;).find(&amp;#34;#form\\[&amp;#34;+ gridId +&amp;#34;\\]\\[&amp;#34; + index + &amp;#34;\\]\\[&amp;#34;+ gridColumnId +&amp;#34;\\]&amp;#34;).prop(&amp;#34;disabled&amp;#34;, false); } } </description>
+    </item>
+    
+    <item>
+      <title>Is Grid Column Empty?</title>
+      <link>http://example.org/javascript/grid/check-if-grid-column-empty/</link>
+      <pubDate>Sun, 05 Jul 2020 14:52:33 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/check-if-grid-column-empty/</guid>
+      <description>Check if a Grid column is empty function isGridColumnEmpty (gridId, rowNo, columnNo) { if (!($(&amp;#34;#&amp;#34; + gridId).getValue(rowNo, columnNo) != &amp;#39;&amp;#39;)) { return [false, columnNo]; } return [true, columnNo]; } </description>
+    </item>
+    
+    <item>
+      <title>Show Grid Column</title>
+      <link>http://example.org/javascript/grid/show-grid-column/</link>
+      <pubDate>Sun, 05 Jul 2020 14:47:33 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/show-grid-column/</guid>
+      <description> Show a grid column function showGridColumn(gridId, index) { $(&amp;#34;#&amp;#34; + gridId).showColumn(index); $(&amp;#34;#&amp;#34; + gridId).enableValidation(index); } </description>
+    </item>
+    
+    <item>
+      <title>Hide Grid Column</title>
+      <link>http://example.org/javascript/grid/hide-grid-column/</link>
+      <pubDate>Sun, 05 Jul 2020 14:47:14 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/hide-grid-column/</guid>
+      <description> Hide a grid column function hideGridColumn(gridId, index) { $(&amp;#34;#&amp;#34; + gridId).hideColumn(index); $(&amp;#34;#&amp;#34; + gridId).disableValidation(index); } </description>
+    </item>
+    
+    <item>
+      <title>Clear Grid</title>
+      <link>http://example.org/javascript/grid/clear-grid/</link>
+      <pubDate>Sun, 05 Jul 2020 14:46:41 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/clear-grid/</guid>
+      <description>Clear a grid function clearGrid(gridId) { return $(&amp;#34;#&amp;#34; + gridId ).clear(); } </description>
+    </item>
+    
+    <item>
+      <title>Disable Grid</title>
+      <link>http://example.org/javascript/grid/disable-grid/</link>
+      <pubDate>Sun, 05 Jul 2020 14:28:04 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/disable-grid/</guid>
+      <description> Disable a grid function disableGrid(elementid) { return $(&amp;#34;#&amp;#34; + elementid).find(&amp;#34;input,button,textarea,select&amp;#34;).attr(&amp;#34;disabled&amp;#34;, true); } </description>
+    </item>
+    
+  </channel>
+</rss>

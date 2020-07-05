@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-07-04T21:08:16+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/grid/</loc>
+    <lastmod>2020-07-05T14:23:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/</loc>
+    <lastmod>2020-07-05T14:23:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/getting-started/</loc>
+    <lastmod>2020-07-04T19:20:26+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/</loc>
+    <lastmod>2020-07-04T23:05:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/trigger/</loc>
+    <lastmod>2020-07-04T23:06:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/how-to/</loc>
+    <lastmod>2020-07-05T00:12:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/libraries/</loc>
+    <lastmod>2020-07-05T16:33:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/getting-started/installation/</loc>
+    <lastmod>2020-07-04T21:02:26+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/how-to/insert-page-break-in-outputdoc/</loc>
+    <lastmod>2020-07-05T17:49:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/how-to/filter-grid/</loc>
+    <lastmod>2020-07-05T17:27:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/how-to/tabs-in-processmaker/</loc>
+    <lastmod>2020-07-05T17:18:29+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/how-to/display-loading-effect/</loc>
+    <lastmod>2020-07-05T17:13:36+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/grid/disable-grid-column/</loc>
+    <lastmod>2020-07-05T14:55:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/grid/enable-grid-column/</loc>
+    <lastmod>2020-07-05T14:54:29+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/grid/check-if-grid-column-empty/</loc>
+    <lastmod>2020-07-05T14:52:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/grid/show-grid-column/</loc>
+    <lastmod>2020-07-05T14:47:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/grid/hide-grid-column/</loc>
+    <lastmod>2020-07-05T14:47:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/grid/clear-grid/</loc>
+    <lastmod>2020-07-05T14:46:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/allow-only-numbers-in-textbox/</loc>
+    <lastmod>2020-07-05T14:44:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/disable-textbox/</loc>
+    <lastmod>2020-07-05T14:44:04+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/enable-textbox/</loc>
+    <lastmod>2020-07-05T14:42:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/get-textbox-value/</loc>
+    <lastmod>2020-07-05T14:42:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/check-if-texbox-is-equal/</loc>
+    <lastmod>2020-07-05T14:41:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/assign-value-to-textbox/</loc>
+    <lastmod>2020-07-05T14:38:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/show-and-assign-value-to-textbox/</loc>
+    <lastmod>2020-07-05T14:37:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/disable-textbox-validation/</loc>
+    <lastmod>2020-07-05T14:36:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/enable-textbox-validation/</loc>
+    <lastmod>2020-07-05T14:36:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/hide-multiple-fields/</loc>
+    <lastmod>2020-07-05T14:35:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/show-multiple-fields/</loc>
+    <lastmod>2020-07-05T14:35:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/hide-textbox/</loc>
+    <lastmod>2020-07-05T14:34:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/show-textbox/</loc>
+    <lastmod>2020-07-05T14:34:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/check-if-empty/</loc>
+    <lastmod>2020-07-05T14:33:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/textbox/empty-textbox/</loc>
+    <lastmod>2020-07-05T14:32:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/javascript/grid/disable-grid/</loc>
+    <lastmod>2020-07-05T14:28:04+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/how-to/disable-form/</loc>
+    <lastmod>2020-07-05T00:18:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/how-to/hide-prev-next-button/</loc>
+    <lastmod>2020-07-05T00:15:56+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>

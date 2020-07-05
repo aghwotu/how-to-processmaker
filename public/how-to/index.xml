@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How To on ProcessMaker Code Snippets</title>
+    <link>http://example.org/how-to/</link>
+    <description>Recent content in How To on ProcessMaker Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Jul 2020 00:12:24 +0100</lastBuildDate>
+    
+	<atom:link href="http://example.org/how-to/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Insert Page Break in Outputdoc</title>
+      <link>http://example.org/how-to/insert-page-break-in-outputdoc/</link>
+      <pubDate>Sun, 05 Jul 2020 17:49:51 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/insert-page-break-in-outputdoc/</guid>
+      <description>Inserting Page Breaks in Output Document</description>
+    </item>
+    
+    <item>
+      <title>Filter and Sort Grid</title>
+      <link>http://example.org/how-to/filter-grid/</link>
+      <pubDate>Sun, 05 Jul 2020 17:27:51 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/filter-grid/</guid>
+      <description>Filter and Sort Grids This is a list of helpful links to help you with Dynaform Grids
+ An answer on the ProcessMaker forum on how to set filtering on grids ProcessMaker wiki guide to using DataTables in ProcessMaker Sort grid by clicking header An answer on the ProcessMaker forum on how to use ParamQuery Sort grid by column  </description>
+    </item>
+    
+    <item>
+      <title>Tabs in Processmaker</title>
+      <link>http://example.org/how-to/tabs-in-processmaker/</link>
+      <pubDate>Sun, 05 Jul 2020 17:18:29 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/tabs-in-processmaker/</guid>
+      <description>How to create tabs in ProcessMaker Dynaform Medium article by Dipo Majekodunmi
+  </description>
+    </item>
+    
+    <item>
+      <title>Display Loading Effect</title>
+      <link>http://example.org/how-to/display-loading-effect/</link>
+      <pubDate>Sun, 05 Jul 2020 17:13:36 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/display-loading-effect/</guid>
+      <description>How to display loading effect in a Dynaform Medium article by Dipo Majekodunmi
+  </description>
+    </item>
+    
+    <item>
+      <title>Disable Form</title>
+      <link>http://example.org/how-to/disable-form/</link>
+      <pubDate>Sun, 05 Jul 2020 00:18:59 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/disable-form/</guid>
+      <description>How disable all the fields on the Dynaform $(&amp;#34;form&amp;#34;).find(&amp;#34;.form-control&amp;#34;).prop(&amp;#34;disabled&amp;#34;, true); </description>
+    </item>
+    
+    <item>
+      <title>Hide Prev Next Button</title>
+      <link>http://example.org/how-to/hide-prev-next-button/</link>
+      <pubDate>Sun, 05 Jul 2020 00:15:56 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/hide-prev-next-button/</guid>
+      <description>How to hide the prev and next button on a Dynaform $(&amp;#34;#dyn_backward&amp;#34;).hide(); $(&amp;#34;img[src=&amp;#39;/images/bulletButtonLeft.gif&amp;#39;]&amp;#34;).hide(); $(&amp;#34;#dyn_forward&amp;#34;).hide(); $(&amp;#34;img[src=&amp;#39;/images/bulletButton.gif&amp;#39;]&amp;#34;).hide(); </description>
+    </item>
+    
+  </channel>
+</rss>

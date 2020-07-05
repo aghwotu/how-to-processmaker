@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home Page on ProcessMaker Code Snippets</title>
+    <link>http://example.org/</link>
+    <description>Recent content in Home Page on ProcessMaker Code Snippets</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jul 2020 21:08:16 +0100</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installation</title>
+      <link>http://example.org/getting-started/installation/</link>
+      <pubDate>Sat, 04 Jul 2020 21:02:26 +0100</pubDate>
+      
+      <guid>http://example.org/getting-started/installation/</guid>
+      <description>Getting Started  Install the ProcessMaker community edition Get the Business Process Automation with ProcessMaker 3.1: A Beginner’s Guide by Dipo Majekodunmi on Amazon  </description>
+    </item>
+    
+    <item>
+      <title>Insert Page Break in Outputdoc</title>
+      <link>http://example.org/how-to/insert-page-break-in-outputdoc/</link>
+      <pubDate>Sun, 05 Jul 2020 17:49:51 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/insert-page-break-in-outputdoc/</guid>
+      <description>Inserting Page Breaks in Output Document</description>
+    </item>
+    
+    <item>
+      <title>Filter and Sort Grid</title>
+      <link>http://example.org/how-to/filter-grid/</link>
+      <pubDate>Sun, 05 Jul 2020 17:27:51 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/filter-grid/</guid>
+      <description>Filter and Sort Grids This is a list of helpful links to help you with Dynaform Grids
+ An answer on the ProcessMaker forum on how to set filtering on grids ProcessMaker wiki guide to using DataTables in ProcessMaker Sort grid by clicking header An answer on the ProcessMaker forum on how to use ParamQuery Sort grid by column  </description>
+    </item>
+    
+    <item>
+      <title>Tabs in Processmaker</title>
+      <link>http://example.org/how-to/tabs-in-processmaker/</link>
+      <pubDate>Sun, 05 Jul 2020 17:18:29 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/tabs-in-processmaker/</guid>
+      <description>How to create tabs in ProcessMaker Dynaform Medium article by Dipo Majekodunmi
+  </description>
+    </item>
+    
+    <item>
+      <title>Display Loading Effect</title>
+      <link>http://example.org/how-to/display-loading-effect/</link>
+      <pubDate>Sun, 05 Jul 2020 17:13:36 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/display-loading-effect/</guid>
+      <description>How to display loading effect in a Dynaform Medium article by Dipo Majekodunmi
+  </description>
+    </item>
+    
+    <item>
+      <title>Disable Grid Column</title>
+      <link>http://example.org/javascript/grid/disable-grid-column/</link>
+      <pubDate>Sun, 05 Jul 2020 14:55:11 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/disable-grid-column/</guid>
+      <description>Disable a grid column function disableGridColumn(gridId, gridColumnId) { let gridRows = $(&amp;#34;#&amp;#34; + gridId).getNumberRows(); for (i = 1; i &amp;lt;= gridRows; i++) { $(&amp;#34;#form\\[&amp;#34; + gridId + &amp;#34;\\]\\[&amp;#34; +i+ &amp;#34;\\]\\[&amp;#34; + gridColumnId + &amp;#34;\\]&amp;#34;).attr(&amp;#34;disabled&amp;#34;, true); } } </description>
+    </item>
+    
+    <item>
+      <title>Enable Grid Column</title>
+      <link>http://example.org/javascript/grid/enable-grid-column/</link>
+      <pubDate>Sun, 05 Jul 2020 14:54:29 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/enable-grid-column/</guid>
+      <description>Enable a grid column function enableGridColumn(gridId, gridColumnId) { let gridRows = $(&amp;#34;#&amp;#34; + gridId).getNumberRows(); for (i = 1; i &amp;lt;= gridRows; i++) { $(&amp;#34;#form\\[&amp;#34; + gridId + &amp;#34;\\]\\[&amp;#34; +i+ &amp;#34;\\]\\[&amp;#34; + gridColumnId + &amp;#34;\\]&amp;#34;).attr(&amp;#34;disabled&amp;#34;, false); } } function enableGridColumn(gridId, gridColumnId) { let numberOfGrid = $(&amp;#34;#&amp;#34; + gridId).getNumberRows(); for (let index = 1; index &amp;lt;= numberOfGrid; index++) { $(&amp;#34;#&amp;#34; + gridId).find(&amp;#34;#&amp;#34;+ gridId +&amp;#34;-body&amp;#34;).find(&amp;#34;#form\\[&amp;#34;+ gridId +&amp;#34;\\]\\[&amp;#34; + index + &amp;#34;\\]\\[&amp;#34;+ gridColumnId +&amp;#34;\\]&amp;#34;).prop(&amp;#34;disabled&amp;#34;, false); } } </description>
+    </item>
+    
+    <item>
+      <title>Is Grid Column Empty?</title>
+      <link>http://example.org/javascript/grid/check-if-grid-column-empty/</link>
+      <pubDate>Sun, 05 Jul 2020 14:52:33 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/check-if-grid-column-empty/</guid>
+      <description>Check if a Grid column is empty function isGridColumnEmpty (gridId, rowNo, columnNo) { if (!($(&amp;#34;#&amp;#34; + gridId).getValue(rowNo, columnNo) != &amp;#39;&amp;#39;)) { return [false, columnNo]; } return [true, columnNo]; } </description>
+    </item>
+    
+    <item>
+      <title>Show Grid Column</title>
+      <link>http://example.org/javascript/grid/show-grid-column/</link>
+      <pubDate>Sun, 05 Jul 2020 14:47:33 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/show-grid-column/</guid>
+      <description> Show a grid column function showGridColumn(gridId, index) { $(&amp;#34;#&amp;#34; + gridId).showColumn(index); $(&amp;#34;#&amp;#34; + gridId).enableValidation(index); } </description>
+    </item>
+    
+    <item>
+      <title>Hide Grid Column</title>
+      <link>http://example.org/javascript/grid/hide-grid-column/</link>
+      <pubDate>Sun, 05 Jul 2020 14:47:14 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/hide-grid-column/</guid>
+      <description> Hide a grid column function hideGridColumn(gridId, index) { $(&amp;#34;#&amp;#34; + gridId).hideColumn(index); $(&amp;#34;#&amp;#34; + gridId).disableValidation(index); } </description>
+    </item>
+    
+    <item>
+      <title>Clear Grid</title>
+      <link>http://example.org/javascript/grid/clear-grid/</link>
+      <pubDate>Sun, 05 Jul 2020 14:46:41 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/clear-grid/</guid>
+      <description>Clear a grid function clearGrid(gridId) { return $(&amp;#34;#&amp;#34; + gridId ).clear(); } </description>
+    </item>
+    
+    <item>
+      <title>Allow Only Numbers in Textbox</title>
+      <link>http://example.org/javascript/textbox/allow-only-numbers-in-textbox/</link>
+      <pubDate>Sun, 05 Jul 2020 14:44:50 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/allow-only-numbers-in-textbox/</guid>
+      <description> Allow only numbers in textbox function allowOnlyNumbers(elementid){ $(&amp;#34;#&amp;#34; + elementid).getControl().keypress( function() { $(this).val($(this).val().replace(/[^\d].+/, &amp;#34;&amp;#34;)); if ((event.which &amp;lt; 48 || event.which &amp;gt; 57)) { event.preventDefault(); } }); } </description>
+    </item>
+    
+    <item>
+      <title>Disable Textbox</title>
+      <link>http://example.org/javascript/textbox/disable-textbox/</link>
+      <pubDate>Sun, 05 Jul 2020 14:44:04 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/disable-textbox/</guid>
+      <description> Disable textbox function disableElement(elementId) { $(&amp;#34;#&amp;#34; + elementId).attr(&amp;#39;disabled&amp;#39;, &amp;#39;disabled&amp;#39;); } </description>
+    </item>
+    
+    <item>
+      <title>Enable Textbox</title>
+      <link>http://example.org/javascript/textbox/enable-textbox/</link>
+      <pubDate>Sun, 05 Jul 2020 14:42:43 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/enable-textbox/</guid>
+      <description> Enable textbox function enableElement(elementId) { $(&amp;#34;#&amp;#34; + elementId).removeAttr(&amp;#39;disabled&amp;#39;); } </description>
+    </item>
+    
+    <item>
+      <title>Get Textbox Value</title>
+      <link>http://example.org/javascript/textbox/get-textbox-value/</link>
+      <pubDate>Sun, 05 Jul 2020 14:42:07 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/get-textbox-value/</guid>
+      <description> Get the value of a textbox function fetchValue(elementid) { return $(&amp;#34;#&amp;#34; + elementid).getValue(); } </description>
+    </item>
+    
+    <item>
+      <title>Check if Texbox Is Equal</title>
+      <link>http://example.org/javascript/textbox/check-if-texbox-is-equal/</link>
+      <pubDate>Sun, 05 Jul 2020 14:41:10 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/check-if-texbox-is-equal/</guid>
+      <description> Check if the value of two textboxes are the same function isSame(element1, element2) { let val1 = $(&amp;#34;#&amp;#34; + element1).getValue(); let val2 = $(&amp;#34;#&amp;#34; + element2).getValue(); return (val1 == val2); } </description>
+    </item>
+    
+    <item>
+      <title>Assign Value to Textbox</title>
+      <link>http://example.org/javascript/textbox/assign-value-to-textbox/</link>
+      <pubDate>Sun, 05 Jul 2020 14:38:43 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/assign-value-to-textbox/</guid>
+      <description> Assign a value to a textbox function assignValue(elementid, value) { return $(&amp;#34;#&amp;#34; + elementid).setValue(value); } </description>
+    </item>
+    
+    <item>
+      <title>Show and Assign to Textbox</title>
+      <link>http://example.org/javascript/textbox/show-and-assign-value-to-textbox/</link>
+      <pubDate>Sun, 05 Jul 2020 14:37:43 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/show-and-assign-value-to-textbox/</guid>
+      <description> Show and assign a value to a textbox function showandAssignValue(element, value) { return $(&amp;#39;#&amp;#39; + element).show().setValue(value); } </description>
+    </item>
+    
+    <item>
+      <title>Disable Textbox Validation</title>
+      <link>http://example.org/javascript/textbox/disable-textbox-validation/</link>
+      <pubDate>Sun, 05 Jul 2020 14:36:59 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/disable-textbox-validation/</guid>
+      <description> Disable validation on textbox function unrequireElement(elementid) { return $(&amp;#34;#&amp;#34; + elementid).disableValidation(); }  You have to make the form control required in order to be able to disableValidation dynamically
+ </description>
+    </item>
+    
+    <item>
+      <title>Enable Textbox Validation</title>
+      <link>http://example.org/javascript/textbox/enable-textbox-validation/</link>
+      <pubDate>Sun, 05 Jul 2020 14:36:06 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/enable-textbox-validation/</guid>
+      <description> Enable validation on textbox function requireElement(elementid) { return $(&amp;#34;#&amp;#34; + elementid).enableValidation(); }  You have to make the form control required in order to be able to enableValidation dynamically
+ </description>
+    </item>
+    
+    <item>
+      <title>Hide Multiple Fields</title>
+      <link>http://example.org/javascript/textbox/hide-multiple-fields/</link>
+      <pubDate>Sun, 05 Jul 2020 14:35:34 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/hide-multiple-fields/</guid>
+      <description> Hide multiple form fields //this accepts an array of textbox ids function hideMultipleElements(arrInput) { arrInput.forEach(hideElementId); function hideElementId(item, index) { return $(&amp;#34;#&amp;#34; + item ).hide(); } } </description>
+    </item>
+    
+    <item>
+      <title>Show Multiple Fields</title>
+      <link>http://example.org/javascript/textbox/show-multiple-fields/</link>
+      <pubDate>Sun, 05 Jul 2020 14:35:13 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/show-multiple-fields/</guid>
+      <description> Show multiple form fields //this accepts an array of textbox ids function showMultipleElements(arrInput) { arrInput.forEach(showElementId); function showElementId(item, index) { return $(&amp;#34;#&amp;#34; + item ).show(); } } </description>
+    </item>
+    
+    <item>
+      <title>Hide Textbox</title>
+      <link>http://example.org/javascript/textbox/hide-textbox/</link>
+      <pubDate>Sun, 05 Jul 2020 14:34:44 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/hide-textbox/</guid>
+      <description> Hide a form field function hideElement(elementid) { return $(&amp;#34;#&amp;#34; + elementid).disableValidation().hide(); } </description>
+    </item>
+    
+    <item>
+      <title>Show Textbox</title>
+      <link>http://example.org/javascript/textbox/show-textbox/</link>
+      <pubDate>Sun, 05 Jul 2020 14:34:06 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/show-textbox/</guid>
+      <description> Show textbox function showElement(elementid, validate = &amp;#34;no&amp;#34;) { if (validate == &amp;#34;yes&amp;#34;) return $(&amp;#34;#&amp;#34; + elementid).enableValidation().show(); return $(&amp;#34;#&amp;#34; + elementid).show(); } </description>
+    </item>
+    
+    <item>
+      <title>Check if Empty</title>
+      <link>http://example.org/javascript/textbox/check-if-empty/</link>
+      <pubDate>Sun, 05 Jul 2020 14:33:37 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/check-if-empty/</guid>
+      <description> Check if a form field is empty function isEmpty(elementid) { if($(&amp;#34;#&amp;#34; + elementid).getValue() == &amp;#39;&amp;#39; ) return true; return false; } </description>
+    </item>
+    
+    <item>
+      <title>Empty Textbox</title>
+      <link>http://example.org/javascript/textbox/empty-textbox/</link>
+      <pubDate>Sun, 05 Jul 2020 14:32:42 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/textbox/empty-textbox/</guid>
+      <description> Empty a textbox field function setEmpty(elementid) { return $(&amp;#34;#&amp;#34; + elementid).setValue(&amp;#39;&amp;#39;); } </description>
+    </item>
+    
+    <item>
+      <title>Disable Grid</title>
+      <link>http://example.org/javascript/grid/disable-grid/</link>
+      <pubDate>Sun, 05 Jul 2020 14:28:04 +0100</pubDate>
+      
+      <guid>http://example.org/javascript/grid/disable-grid/</guid>
+      <description> Disable a grid function disableGrid(elementid) { return $(&amp;#34;#&amp;#34; + elementid).find(&amp;#34;input,button,textarea,select&amp;#34;).attr(&amp;#34;disabled&amp;#34;, true); } </description>
+    </item>
+    
+    <item>
+      <title>Disable Form</title>
+      <link>http://example.org/how-to/disable-form/</link>
+      <pubDate>Sun, 05 Jul 2020 00:18:59 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/disable-form/</guid>
+      <description>How disable all the fields on the Dynaform $(&amp;#34;form&amp;#34;).find(&amp;#34;.form-control&amp;#34;).prop(&amp;#34;disabled&amp;#34;, true); </description>
+    </item>
+    
+    <item>
+      <title>Hide Prev Next Button</title>
+      <link>http://example.org/how-to/hide-prev-next-button/</link>
+      <pubDate>Sun, 05 Jul 2020 00:15:56 +0100</pubDate>
+      
+      <guid>http://example.org/how-to/hide-prev-next-button/</guid>
+      <description>How to hide the prev and next button on a Dynaform $(&amp;#34;#dyn_backward&amp;#34;).hide(); $(&amp;#34;img[src=&amp;#39;/images/bulletButtonLeft.gif&amp;#39;]&amp;#34;).hide(); $(&amp;#34;#dyn_forward&amp;#34;).hide(); $(&amp;#34;img[src=&amp;#39;/images/bulletButton.gif&amp;#39;]&amp;#34;).hide(); </description>
+    </item>
+    
+  </channel>
+</rss>

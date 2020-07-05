@@ -1,0 +1,274 @@
+[
+{
+	"uri": "http://example.org/",
+	"title": "Home Page",
+	"tags": [],
+	"description": "",
+	"content": "ProcessMaker Tips ProcessMaker official documentation\nSummary  Getting Started  Chapter 1 Getting Started A guide to setting up ProcessMaker\n Installation  Getting Started Install the ProcessMaker community edition Get the Business Process Automation with ProcessMaker 3.1: A Beginner’s Guide by Dipo Majekodunmi on Amazon  Javascript  Chapter 2 JavaScript Code snippets for the Dynaform controls\n Grid  Grid JavaScript snippets for Dynaform control: grid  Textbox  Textbox and Textarea JavaScript snippets for Dynaform control textbox and textarea  Trigger  Chapter 3 Triggers PHP snippets for ProcessMaker triggers  How To  Chapter 4 GENERAL GUIDE Some helpful links for ProcessMaker\n Insert Page Break in Outputdoc  Inserting Page Breaks in Output Document\n Filter and Sort Grid  Filter and Sort Grids This is a list of helpful links to help you with Dynaform Grids An answer on the ProcessMaker forum on how to set filtering on grids ProcessMaker wiki guide to using DataTables in ProcessMaker Sort grid by clicking header An answer on the ProcessMaker forum on how to use ParamQuery Sort grid by column  Tabs in Processmaker  How to create tabs in ProcessMaker Dynaform Medium article by Dipo Majekodunmi  Display Loading Effect  How to display loading effect in a Dynaform Medium article by Dipo Majekodunmi  Disable Form  How disable all the fields on the Dynaform $(\u0026#34;form\u0026#34;).find(\u0026#34;.form-control\u0026#34;).prop(\u0026#34;disabled\u0026#34;, true);  Hide Prev Next Button  How to hide the prev and next button on a Dynaform $(\u0026#34;#dyn_backward\u0026#34;).hide(); $(\u0026#34;img[src=\u0026#39;/images/bulletButtonLeft.gif\u0026#39;]\u0026#34;).hide(); $(\u0026#34;#dyn_forward\u0026#34;).hide(); $(\u0026#34;img[src=\u0026#39;/images/bulletButton.gif\u0026#39;]\u0026#34;).hide();  Libraries  Chapter 5 Libraries This is a list of helpful libraries for your ProcessMaker Dynaforms Sweetalert: makes popup messages easy and pretty. DataTables: adds advanced interaction controls to your HTML tables ParamQuery grid ParamQuery grid is the best open source jQuery grid plugin with enterprise features like row grouping, pivot, treegrid, column grouping, nesting, batch editing, export to multiple formats, selections, full keyboard navigation in addition to the basic features like sorting, filtering, paging, inline editing, validations, etc.\n Contribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it\n"
+},
+{
+	"uri": "http://example.org/javascript/grid/",
+	"title": "Grid",
+	"tags": [],
+	"description": "",
+	"content": "Grid JavaScript snippets for Dynaform control: grid "
+},
+{
+	"uri": "http://example.org/javascript/textbox/",
+	"title": "Textbox",
+	"tags": [],
+	"description": "",
+	"content": "Textbox and Textarea JavaScript snippets for Dynaform control textbox and textarea "
+},
+{
+	"uri": "http://example.org/getting-started/",
+	"title": "Getting Started",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 1 Getting Started A guide to setting up ProcessMaker\n"
+},
+{
+	"uri": "http://example.org/javascript/",
+	"title": "Javascript",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 2 JavaScript Code snippets for the Dynaform controls\n"
+},
+{
+	"uri": "http://example.org/trigger/",
+	"title": "Trigger",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 3 Triggers PHP snippets for ProcessMaker triggers "
+},
+{
+	"uri": "http://example.org/how-to/",
+	"title": "How To",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 4 GENERAL GUIDE Some helpful links for ProcessMaker\n"
+},
+{
+	"uri": "http://example.org/libraries/",
+	"title": "Libraries",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 5 Libraries This is a list of helpful libraries for your ProcessMaker Dynaforms\n Sweetalert: makes popup messages easy and pretty. DataTables: adds advanced interaction controls to your HTML tables ParamQuery grid   ParamQuery grid is the best open source jQuery grid plugin with enterprise features like row grouping, pivot, treegrid, column grouping, nesting, batch editing, export to multiple formats, selections, full keyboard navigation in addition to the basic features like sorting, filtering, paging, inline editing, validations, etc.\n "
+},
+{
+	"uri": "http://example.org/getting-started/installation/",
+	"title": "Installation",
+	"tags": [],
+	"description": "",
+	"content": "Getting Started  Install the ProcessMaker community edition Get the Business Process Automation with ProcessMaker 3.1: A Beginner’s Guide by Dipo Majekodunmi on Amazon  "
+},
+{
+	"uri": "http://example.org/how-to/insert-page-break-in-outputdoc/",
+	"title": "Insert Page Break in Outputdoc",
+	"tags": [],
+	"description": "",
+	"content": "Inserting Page Breaks in Output Document\n"
+},
+{
+	"uri": "http://example.org/how-to/filter-grid/",
+	"title": "Filter and Sort Grid",
+	"tags": [],
+	"description": "",
+	"content": "Filter and Sort Grids This is a list of helpful links to help you with Dynaform Grids\n An answer on the ProcessMaker forum on how to set filtering on grids ProcessMaker wiki guide to using DataTables in ProcessMaker Sort grid by clicking header An answer on the ProcessMaker forum on how to use ParamQuery Sort grid by column  "
+},
+{
+	"uri": "http://example.org/how-to/tabs-in-processmaker/",
+	"title": "Tabs in Processmaker",
+	"tags": [],
+	"description": "",
+	"content": "How to create tabs in ProcessMaker Dynaform Medium article by Dipo Majekodunmi\n  "
+},
+{
+	"uri": "http://example.org/how-to/display-loading-effect/",
+	"title": "Display Loading Effect",
+	"tags": [],
+	"description": "",
+	"content": "How to display loading effect in a Dynaform Medium article by Dipo Majekodunmi\n  "
+},
+{
+	"uri": "http://example.org/javascript/grid/disable-grid-column/",
+	"title": "Disable Grid Column",
+	"tags": [],
+	"description": "",
+	"content": "Disable a grid column function disableGridColumn(gridId, gridColumnId) { let gridRows = $(\u0026#34;#\u0026#34; + gridId).getNumberRows(); for (i = 1; i \u0026lt;= gridRows; i++) { $(\u0026#34;#form\\\\[\u0026#34; + gridId + \u0026#34;\\\\]\\\\[\u0026#34; +i+ \u0026#34;\\\\]\\\\[\u0026#34; + gridColumnId + \u0026#34;\\\\]\u0026#34;).attr(\u0026#34;disabled\u0026#34;, true); } } "
+},
+{
+	"uri": "http://example.org/javascript/grid/enable-grid-column/",
+	"title": "Enable Grid Column",
+	"tags": [],
+	"description": "",
+	"content": "Enable a grid column function enableGridColumn(gridId, gridColumnId) { let gridRows = $(\u0026#34;#\u0026#34; + gridId).getNumberRows(); for (i = 1; i \u0026lt;= gridRows; i++) { $(\u0026#34;#form\\\\[\u0026#34; + gridId + \u0026#34;\\\\]\\\\[\u0026#34; +i+ \u0026#34;\\\\]\\\\[\u0026#34; + gridColumnId + \u0026#34;\\\\]\u0026#34;).attr(\u0026#34;disabled\u0026#34;, false); } } function enableGridColumn(gridId, gridColumnId) { let numberOfGrid = $(\u0026#34;#\u0026#34; + gridId).getNumberRows(); for (let index = 1; index \u0026lt;= numberOfGrid; index++) { $(\u0026#34;#\u0026#34; + gridId).find(\u0026#34;#\u0026#34;+ gridId +\u0026#34;-body\u0026#34;).find(\u0026#34;#form\\\\[\u0026#34;+ gridId +\u0026#34;\\\\]\\\\[\u0026#34; + index + \u0026#34;\\\\]\\\\[\u0026#34;+ gridColumnId +\u0026#34;\\\\]\u0026#34;).prop(\u0026#34;disabled\u0026#34;, false); } } "
+},
+{
+	"uri": "http://example.org/javascript/grid/check-if-grid-column-empty/",
+	"title": "Is Grid Column Empty?",
+	"tags": [],
+	"description": "",
+	"content": "Check if a Grid column is empty function isGridColumnEmpty (gridId, rowNo, columnNo) { if (!($(\u0026#34;#\u0026#34; + gridId).getValue(rowNo, columnNo) != \u0026#39;\u0026#39;)) { return [false, columnNo]; } return [true, columnNo]; } "
+},
+{
+	"uri": "http://example.org/javascript/grid/show-grid-column/",
+	"title": "Show Grid Column",
+	"tags": [],
+	"description": "",
+	"content": " Show a grid column function showGridColumn(gridId, index) { $(\u0026#34;#\u0026#34; + gridId).showColumn(index); $(\u0026#34;#\u0026#34; + gridId).enableValidation(index); } "
+},
+{
+	"uri": "http://example.org/javascript/grid/hide-grid-column/",
+	"title": "Hide Grid Column",
+	"tags": [],
+	"description": "",
+	"content": " Hide a grid column function hideGridColumn(gridId, index) { $(\u0026#34;#\u0026#34; + gridId).hideColumn(index); $(\u0026#34;#\u0026#34; + gridId).disableValidation(index); } "
+},
+{
+	"uri": "http://example.org/javascript/grid/clear-grid/",
+	"title": "Clear Grid",
+	"tags": [],
+	"description": "",
+	"content": "Clear a grid function clearGrid(gridId) { return $(\u0026#34;#\u0026#34; + gridId ).clear(); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/allow-only-numbers-in-textbox/",
+	"title": "Allow Only Numbers in Textbox",
+	"tags": [],
+	"description": "",
+	"content": " Allow only numbers in textbox function allowOnlyNumbers(elementid){ $(\u0026#34;#\u0026#34; + elementid).getControl().keypress( function() { $(this).val($(this).val().replace(/[^\\d].+/, \u0026#34;\u0026#34;)); if ((event.which \u0026lt; 48 || event.which \u0026gt; 57)) { event.preventDefault(); } }); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/disable-textbox/",
+	"title": "Disable Textbox",
+	"tags": [],
+	"description": "",
+	"content": " Disable textbox function disableElement(elementId) { $(\u0026#34;#\u0026#34; + elementId).attr(\u0026#39;disabled\u0026#39;, \u0026#39;disabled\u0026#39;); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/enable-textbox/",
+	"title": "Enable Textbox",
+	"tags": [],
+	"description": "",
+	"content": " Enable textbox function enableElement(elementId) { $(\u0026#34;#\u0026#34; + elementId).removeAttr(\u0026#39;disabled\u0026#39;); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/get-textbox-value/",
+	"title": "Get Textbox Value",
+	"tags": [],
+	"description": "",
+	"content": " Get the value of a textbox function fetchValue(elementid) { return $(\u0026#34;#\u0026#34; + elementid).getValue(); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/check-if-texbox-is-equal/",
+	"title": "Check if Texbox Is Equal",
+	"tags": [],
+	"description": "",
+	"content": " Check if the value of two textboxes are the same function isSame(element1, element2) { let val1 = $(\u0026#34;#\u0026#34; + element1).getValue(); let val2 = $(\u0026#34;#\u0026#34; + element2).getValue(); return (val1 == val2); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/assign-value-to-textbox/",
+	"title": "Assign Value to Textbox",
+	"tags": [],
+	"description": "",
+	"content": " Assign a value to a textbox function assignValue(elementid, value) { return $(\u0026#34;#\u0026#34; + elementid).setValue(value); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/show-and-assign-value-to-textbox/",
+	"title": "Show and Assign to Textbox",
+	"tags": [],
+	"description": "",
+	"content": " Show and assign a value to a textbox function showandAssignValue(element, value) { return $(\u0026#39;#\u0026#39; + element).show().setValue(value); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/disable-textbox-validation/",
+	"title": "Disable Textbox Validation",
+	"tags": [],
+	"description": "",
+	"content": " Disable validation on textbox function unrequireElement(elementid) { return $(\u0026#34;#\u0026#34; + elementid).disableValidation(); }  You have to make the form control required in order to be able to disableValidation dynamically\n "
+},
+{
+	"uri": "http://example.org/javascript/textbox/enable-textbox-validation/",
+	"title": "Enable Textbox Validation",
+	"tags": [],
+	"description": "",
+	"content": " Enable validation on textbox function requireElement(elementid) { return $(\u0026#34;#\u0026#34; + elementid).enableValidation(); }  You have to make the form control required in order to be able to enableValidation dynamically\n "
+},
+{
+	"uri": "http://example.org/javascript/textbox/hide-multiple-fields/",
+	"title": "Hide Multiple Fields",
+	"tags": [],
+	"description": "",
+	"content": " Hide multiple form fields //this accepts an array of textbox ids function hideMultipleElements(arrInput) { arrInput.forEach(hideElementId); function hideElementId(item, index) { return $(\u0026#34;#\u0026#34; + item ).hide(); } } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/show-multiple-fields/",
+	"title": "Show Multiple Fields",
+	"tags": [],
+	"description": "",
+	"content": " Show multiple form fields //this accepts an array of textbox ids function showMultipleElements(arrInput) { arrInput.forEach(showElementId); function showElementId(item, index) { return $(\u0026#34;#\u0026#34; + item ).show(); } } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/hide-textbox/",
+	"title": "Hide Textbox",
+	"tags": [],
+	"description": "",
+	"content": " Hide a form field function hideElement(elementid) { return $(\u0026#34;#\u0026#34; + elementid).disableValidation().hide(); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/show-textbox/",
+	"title": "Show Textbox",
+	"tags": [],
+	"description": "",
+	"content": " Show textbox function showElement(elementid, validate = \u0026#34;no\u0026#34;) { if (validate == \u0026#34;yes\u0026#34;) return $(\u0026#34;#\u0026#34; + elementid).enableValidation().show(); return $(\u0026#34;#\u0026#34; + elementid).show(); } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/check-if-empty/",
+	"title": "Check if Empty",
+	"tags": [],
+	"description": "",
+	"content": " Check if a form field is empty function isEmpty(elementid) { if($(\u0026#34;#\u0026#34; + elementid).getValue() == \u0026#39;\u0026#39; ) return true; return false; } "
+},
+{
+	"uri": "http://example.org/javascript/textbox/empty-textbox/",
+	"title": "Empty Textbox",
+	"tags": [],
+	"description": "",
+	"content": " Empty a textbox field function setEmpty(elementid) { return $(\u0026#34;#\u0026#34; + elementid).setValue(\u0026#39;\u0026#39;); } "
+},
+{
+	"uri": "http://example.org/javascript/grid/disable-grid/",
+	"title": "Disable Grid",
+	"tags": [],
+	"description": "",
+	"content": " Disable a grid function disableGrid(elementid) { return $(\u0026#34;#\u0026#34; + elementid).find(\u0026#34;input,button,textarea,select\u0026#34;).attr(\u0026#34;disabled\u0026#34;, true); } "
+},
+{
+	"uri": "http://example.org/how-to/disable-form/",
+	"title": "Disable Form",
+	"tags": [],
+	"description": "",
+	"content": "How disable all the fields on the Dynaform $(\u0026#34;form\u0026#34;).find(\u0026#34;.form-control\u0026#34;).prop(\u0026#34;disabled\u0026#34;, true); "
+},
+{
+	"uri": "http://example.org/how-to/hide-prev-next-button/",
+	"title": "Hide Prev Next Button",
+	"tags": [],
+	"description": "",
+	"content": "How to hide the prev and next button on a Dynaform $(\u0026#34;#dyn_backward\u0026#34;).hide(); $(\u0026#34;img[src=\u0026#39;/images/bulletButtonLeft.gif\u0026#39;]\u0026#34;).hide(); $(\u0026#34;#dyn_forward\u0026#34;).hide(); $(\u0026#34;img[src=\u0026#39;/images/bulletButton.gif\u0026#39;]\u0026#34;).hide(); "
+},
+{
+	"uri": "http://example.org/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
