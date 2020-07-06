@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://how-to-processmaker.netlify.app/"
 languageCode = "en-us"
 title = "ProcessMaker Code Snippets"
 # Change the default theme
