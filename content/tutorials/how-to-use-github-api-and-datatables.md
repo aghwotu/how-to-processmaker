@@ -161,3 +161,13 @@ function getList(tableObject) {
 ```
 
 
+#### Putting it all Together
+Place the ```Get List of Users``` trigger before the ```GitHub Users``` dynaform
+
+![image](https://user-images.githubusercontent.com/22425217/90297242-c2e49b80-de85-11ea-9779-c988659be610.png)
+
+
+When you run the case, this is what you will get:
+
+![image](https://user-images.githubusercontent.com/22425217/90297429-53bb7700-de86-11ea-93eb-0870f13a2316.png)
+
