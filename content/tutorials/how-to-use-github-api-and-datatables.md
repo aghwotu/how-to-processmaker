@@ -235,7 +235,7 @@ Next, let us attach a click event to the buttons. The ```nth-child()``` selector
 ```javascript
 
 
-//Place click event on column
+//Attach click event to buttons
 
 $('#tableUserList tbody').on( 'click', 'td:nth-child(1)', function () {
 
