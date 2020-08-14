@@ -171,3 +171,86 @@ When you run the case, this is what you will get:
 
 ![image](https://user-images.githubusercontent.com/22425217/90297429-53bb7700-de86-11ea-93eb-0870f13a2316.png)
 
+
+#### Additional Information
+##### Adding Buttons to the DataTable
+If you want to add buttons to the table, we can add title objects to the columns in the DataTable. Let us add two buttons the the table
+
+```javascript
+
+function getList(tableObject) {  
+  
+  let userList = $('#'+ tableObject.hiddenListId +'').getValue();
+  
+  userList = JSON.parse(userList);
+    
+  const table = $('#'+ tableObject.dataTableId +'').DataTable( {
+    data: userList,
+    columns: [
+      
+      { title: "Button-one", class: "center", render: function(data, type, full, meta) 
+       		{
+     			
+              	return '<div class="btn btn-info btn-sm"  >' + 'BUTTON ONE' + '</div>';
+  	  		}
+	  },
+      { title: "Button-two", class: "center", render: function(data, type, full, meta) 
+       		{
+     			
+              	return '<div class="btn btn-info btn-sm"  >' + 'BUTTON TWO' + '</div>';
+  	  		}
+	  },
+      
+      { data: "id" , title: "ID"},
+      { data: "login" , title: "LOGIN"},
+      { data: "node_id" , title: "NODE_ID" },
+      { data: "avatar_url" , title: "AVATAR_URL"},
+      { data: "gravatar_id" , title: "GRAVATAR_ID" },
+      { data: "url" , title: "URL" },
+      { data: "html_url" , title: "HTML_URL" },
+      { data: "followers_url" , title: "FOLLOWERS_URL" },
+      { data: "gists_url" , title: "GISTS_URL" },
+      { data: "starred_url" , title: "STARRED_URL" },
+      { data: "subscriptions_url" , title: "SUBSCRIPTIONS_URL" },
+      { data: "organizations_url" , title: "ORGANIZATIONS_URL" },
+      { data: "repos_url" , title: "REPOS_URL" },
+      { data: "events_url" , title: "EVENTS_URL" },
+      { data: "received_events_url" , title: "RECEIVED_EVENTS_URL" },
+      { data: "type" , title: "TYPE" },
+      { data: "site_admin" , title: "SITE_ADMIN" }
+    ]
+
+  } );
+    
+    
+
+}
+
+```
+
+Next, let us attach a click event to the buttons. The ```nth-child()``` selector targets the column number on the table
+
+
+```javascript
+
+
+//Place click event on column
+
+$('#tableUserList tbody').on( 'click', 'td:nth-child(1)', function () {
+
+	const table = $('.dataTable').DataTable(); 
+	const data = table.row( $(this).parents('tr') ).data();
+    console.log(data);
+
+});
+
+
+$('#tableUserList tbody').on( 'click', 'td:nth-child(2)', function () {
+
+  	const table = $('.dataTable').DataTable(); 
+	const data = table.row( $(this).parents('tr') ).data();
+    console.log(data);
+
+});
+
+```
