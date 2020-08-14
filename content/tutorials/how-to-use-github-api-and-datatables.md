@@ -99,8 +99,13 @@ and then, insert this html code to style the panel:
 </table>
 ``` 
 
+![image](https://user-images.githubusercontent.com/22425217/90296523-a9daeb00-de83-11ea-9f68-ed2c6af1b74c.png)
 
-5. In the Dynaform javascript editor, we  we will add the following code snippets
+
+
+5. In the Dynaform javascript editor, we  we will add the following code snippets as shown in the image below 
+![image](https://user-images.githubusercontent.com/22425217/90296701-253c9c80-de84-11ea-82cd-b2eac05f9676.png)
+
 
 
 ```javascript
@@ -154,3 +159,5 @@ function getList(tableObject) {
 
 }
 ```
+
+
