@@ -6,21 +6,17 @@ draft:
 ---
 
 
- One of the requirements you may have for a grid in ProcessMaker is the ability to search through records and arrange columns in ascending or descending order. This is where [DataTables](https://datatables.net/) comes in. It is a library that will allow you to do this easily. 
+ One of the requirements you may have for a grid in ProcessMaker is the ability to search through records and arrange columns in ascending or descending order. This is where [DataTables](https://datatables.net/) comes in. It is a library that will allow you to do this easily. We will get the data from GitHub api and display in the DataTable.
 
 #### Variable
 
-Our first step is to create a string variable and name it ```hiddenUserList```. 
+Our first step is to create a variable of type string and name it ```hiddenUserList```. 
 
 #### Trigger
 Next, we create a [trigger](https://wiki.processmaker.com/3.0/Triggers) and name it ```Get List of Users```
 
-Inside the trigger, we will write the code to call the [GitHub API to list users](https://developer.github.com/v3/users/#list-users).
+Inside the trigger, we will write the code to call the [GitHub API to list users](https://developer.github.com/v3/users/#list-users). For the ```User-Agent``` ```CURLOPT_HTTPHEADER```, use your GitHub username. This will allow GitHub to contact you if there are problems, as stated here in their [documentation](https://developer.github.com/v3/#user-agent-required). This is the code to make the API call:   
 
-
-{{% notice note %}}
-To learn more about GitHub APIs you can visit the [GitHub Developer](https://developer.github.com/) page
-{{% /notice %}}
 
 
 ```php
@@ -28,14 +24,18 @@ To learn more about GitHub APIs you can visit the [GitHub Developer](https://dev
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://api.github.com/users?since=135",
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => "",
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => "GET",
+    CURLOPT_URL => "https://api.github.com/users",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "GET",
+    CURLOPT_HTTPHEADER => array(
+        "Accept: application/vnd.github.v3+json",
+        "User-Agent: your-github-username"
+    ),
 ));
 
 $response = curl_exec($curl);
@@ -43,58 +43,114 @@ $response = curl_exec($curl);
 curl_close($curl);
 
 /*
-assign the json_encode() $response to the hiddenUserList variable
+assign the $response to the hiddenUserList variable
 */
 
-@@hiddenUserList = json_encode($response);
+@@hiddenUserList = $response;
 
 ``` 
 
+{{% notice note %}}
+To learn more about GitHub APIs you can visit the [GitHub Developer](https://developer.github.com/) page
+{{% /notice %}}
+
 
 #### Dynaform
-We will now create a Dynaform and name it ```GitHub Users``` and open it.
+Next we will create a Dynaform and name it ```GitHub Users``` and open it.
 
-1. In the Dynaform, drag a hidden form control and assign the ```hiddenUserList``` to it. It will contain the list of users.
+1. In the external libs of the Dynaform, we need the DataTable CDN
+
+```javascript
+https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js,
+
+https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css
+
+```
 
 
-2. Inside the Dynaform, we will add a [panel](https://wiki.processmaker.com/3.0/Panel_Control). 
+2. Next we drag a hidden form control and assign the ```hiddenUserList``` variable to it. It will hold the list of users.
+
+
+3. Inside the Dynaform, we will add a [panel](https://wiki.processmaker.com/3.0/Panel_Control). 
 Give the panel an id name of ```panelTitle``` 
 and then, insert this html code to style the panel:
 
 ```html
-<div>
-    <!-- panelTitle content -->
+<div style="background:#286090; 
+            color:#fff; 
+            text-align:center; 
+            padding-top: 12px; 
+            padding-bottom: 15px; 
+            margin-top: 37px;" 
+     
+     class='container-fluid jumbotron'>
+
+  <h4>List of Users</h4>
+
 </div>
 ``` 
 
 
-3. We then drag another panel onto the form and give it an id of ```panelTable```. This panel will hold our DataTable. Add this html code in the panel.
+4. We then drag another panel below the first panel and give it an id of ```panelTable```. This panel will hold our GitHub users and this is the html code for the table:
 
 ```html
-<div>
-    <!-- panelTable content -->
-</div>
+<table id="tableUserList" class="display table table-striped table-bordered" width="100%" >
+
+</table>
 ``` 
 
 
-4. In the Dynaform javascript editor, we  we will add the following code snippets
+5. In the Dynaform javascript editor, we  we will add the following code snippets
 
 
 ```javascript
 
-const tableInfo = {tableId: "", tableListId: "", hasButtons: true};
+const usersInfo = {hiddenListId: "hiddenUserList", dataTableId: "tableUserList"};
 
 $(document).ready(function() {
 
-    getTableList();
+    getList(usersInfo);
 
 });
 ``` 
 
- Then we add this function outside the ```$(document).ready(function(){});``` block. The function accepts an object
+ Then we write the ```getList()``` function under the ```$(document).ready(function(){});``` block. 
 
 ```javascript
-function getTableList(tableObject) {
+function getList(tableObject) {  
+  
+  //here we get the list of users from the hidden variable
+  let userList = $('#'+ tableObject.hiddenListId +'').getValue();
+  
+  userList = JSON.parse(userList);
+    
+  //here we insert the list of users to to the table
+  const table = $('#'+ tableObject.dataTableId +'').DataTable( {
+    data: userList,
+    columns: [
+      
+      { data: "id" , title: "ID"},
+      { data: "login" , title: "LOGIN"},
+      { data: "node_id" , title: "NODE_ID" },
+      { data: "avatar_url" , title: "AVATAR_URL"},
+      { data: "gravatar_id" , title: "GRAVATAR_ID" },
+      { data: "url" , title: "URL" },
+      { data: "html_url" , title: "HTML_URL" },
+      { data: "followers_url" , title: "FOLLOWERS_URL" },
+      { data: "gists_url" , title: "GISTS_URL" },
+      { data: "starred_url" , title: "STARRED_URL" },
+      { data: "subscriptions_url" , title: "SUBSCRIPTIONS_URL" },
+      { data: "organizations_url" , title: "ORGANIZATIONS_URL" },
+      { data: "repos_url" , title: "REPOS_URL" },
+      { data: "events_url" , title: "EVENTS_URL" },
+      { data: "received_events_url" , title: "RECEIVED_EVENTS_URL" },
+      { data: "type" , title: "TYPE" },
+      { data: "site_admin" , title: "SITE_ADMIN" }
+    ]
+
+  } );
+    
+    
 
 }
 ```
