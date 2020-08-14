@@ -176,6 +176,7 @@ When you run the case, this is what you will get:
 ##### Adding Buttons to the DataTable
 If you want to add buttons to the table, we can add title objects to the columns in the DataTable. Let us add two buttons the the table
 
+
 ```javascript
 
 function getList(tableObject) {  
@@ -228,7 +229,7 @@ function getList(tableObject) {
 
 ```
 
-Next, let us attach a click event to the buttons. The ```nth-child()``` selector targets the column number on the table
+Next, let us attach a click event to the buttons. The ```nth-child()``` selector targets the column number on the table and the buttons are on the second and third columns
 
 
 ```javascript
@@ -240,7 +241,6 @@ $('#tableUserList tbody').on( 'click', 'td:nth-child(1)', function () {
 
 	const table = $('.dataTable').DataTable(); 
 	const data = table.row( $(this).parents('tr') ).data();
-    console.log(data);
 
 });
 
@@ -249,8 +249,10 @@ $('#tableUserList tbody').on( 'click', 'td:nth-child(2)', function () {
 
   	const table = $('.dataTable').DataTable(); 
 	const data = table.row( $(this).parents('tr') ).data();
-    console.log(data);
 
 });
 
 ```
+
+This is how the table will now appear:
+![image](https://user-images.githubusercontent.com/22425217/90299304-79984a00-de8d-11ea-9a91-c4f06f8e0e52.png)
