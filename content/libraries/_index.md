@@ -12,8 +12,7 @@ pre = "<b>5. </b>"
 
 This is a list of helpful libraries for your [ProcessMaker](https://www.processmaker.com/) Dynaforms  
 
-1. [Sweetalert](https://sweetalert.js.org/): makes popup messages easy and pretty.
-2. [DataTables](https://datatables.net/): adds advanced interaction controls
-to your HTML tables
-3. [ParamQuery grid](https://paramquery.com/)
-> ParamQuery grid is the best open source jQuery grid plugin with enterprise features like row grouping, pivot, treegrid, column grouping, nesting, batch editing, export to multiple formats, selections, full keyboard navigation in addition to the basic features like sorting, filtering, paging, inline editing, validations, etc.
+1. [SweetAlert](https://sweetalert.js.org/): makes popup messages easy and pretty. This library is promise based
+2. [sweetalert2](https://sweetalert2.github.io/): a beautiful, responsive, customizable, accessible(wai-aria) replacement for javascript's popup boxes with zero dependencies. This library is also promise based
+3. [DataTables](https://datatables.net/): adds advanced interaction controls to your HTML tables
+4. [ParamQuery grid](https://paramquery.com/): paramQuery grid is an open source jQuery grid plugin with enterprise features like row grouping, pivot, treegrid, column grouping, nesting, batch editing, export to multiple formats, selections, full keyboard navigation in addition to the basic features like sorting, filtering, paging, inline editing, validations, etc.
