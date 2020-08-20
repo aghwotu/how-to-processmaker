@@ -40,7 +40,7 @@ $response = curl_exec($curl);
 curl_close($curl);
 echo $response;
 
-````
+```
 
 2. Next we create a Dynaform and give it a title of ```Fetch API``` then ```Save & Open``` it.
 ![image](https://user-images.githubusercontent.com/22425217/90323294-5c2fb280-df57-11ea-9d67-abdf48c57796.png)
