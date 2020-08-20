@@ -115,6 +115,10 @@ function showOutput(res) {
 
 9. Next, we write our function to make the ajax call to our ```Get All Posts``` trigger
 
+{{% notice note %}}
+For making ajax calls in ProcessMaker version 3, we use the PUT method
+{{% /notice %}}
+
 ```javascript
 
 function getAllPosts(){
