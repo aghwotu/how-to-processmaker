@@ -5,6 +5,9 @@ weight: 1
 draft: 
 ---
 
+{{% notice note %}}
+This tutorial is for ProcessMaker version 3
+{{% /notice %}}
 
  One of the requirements you may have for a grid in ProcessMaker is the ability to search through records and arrange columns in ascending or descending order. This is where [DataTables](https://datatables.net/) comes in. It is a library that will allow you to do this easily. We will get the data from GitHub api and display in the DataTable.
 
