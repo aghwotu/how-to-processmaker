@@ -71,8 +71,8 @@ echo $response;
 
 ```html
 
-<div id="resultPanel" style="height: 200px">
-
+<div class="panel panel-default" id="resultPanel" style="height: 100px">
+	
 </div>
 
 ```
