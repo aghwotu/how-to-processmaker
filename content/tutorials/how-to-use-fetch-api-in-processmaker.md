@@ -4,6 +4,7 @@ date: 2020-08-15T23:09:18+01:00
 draft: 
 ---
 
+
 When trying to use the fetch api to make an ajax call in ProcessMaker, we need to consider if we are making the call to a trigger or not. We shall be looking at both instances where: 
 1. We make an ajax call to a trigger and 
 2. We call an api directly.
@@ -144,5 +145,33 @@ $(document).ready(function() {
 
   
 });
+
+```
+
+When we run the process, this is how it will appear:
+![image](https://user-images.githubusercontent.com/22425217/90829446-b05fdb80-e337-11ea-9d25-b9d87df064ac.png)
+
+
+#### API Call Directly
+In order to make our api call directly, the only thing we change is our url in the ```getAllPosts``` function and our method like so:
+
+```javascript
+
+function getAllPosts(){
+  
+  trig_uid = "7602398855f3874765e8fa2087940747"; // Trigger ID of 'Get All Posts'
+  const url = "https://jsonplaceholder.typicode.com/posts";
+  const testing =  fetch(url, {
+    method: 'GET',
+    headers: {
+      Authorization: 'Bearer ' + token
+    }
+
+  })
+  .then(response => response.json())
+  .then(json => showOutput(json))
+
+ 
+}
 
 ```
