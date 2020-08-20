@@ -58,7 +58,7 @@ To learn more about GitHub APIs you can visit the [GitHub Developer](https://dev
 #### Dynaform
 Next we will create a Dynaform and name it ```GitHub Users``` and open it.
 
-1. In the external libs of the Dynaform, we need the DataTable CDN
+1. In the external libs columns of the Dynaform, we will include the DataTable CDN
 
 ```javascript
 https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js,
@@ -71,9 +71,8 @@ https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css
 2. Next we drag a hidden form control and assign the ```hiddenUserList``` variable to it. It will hold the list of users.
 
 
-3. Inside the Dynaform, we will add a [panel](https://wiki.processmaker.com/3.0/Panel_Control). 
-Give the panel an id name of ```panelTitle``` 
-and then, insert this html code to style the panel:
+3. Inside the Dynaform, we will add a [panel](https://wiki.processmaker.com/3.0/Panel_Control) control and give it an id of ```panelTitle```. 
+This is the html code to style the panel:
 
 ```html
 <div style="background:#286090; 
@@ -85,19 +84,21 @@ and then, insert this html code to style the panel:
      
      class='container-fluid jumbotron'>
 
-  <h4>List of Users</h4>
+  <h4>List of GitHub Users</h4>
 
 </div>
 ``` 
 
 
-4. We then drag another panel below the first panel and give it an id of ```panelTable```. This panel will hold our GitHub users and this is the html code for the table:
+4. Now, we drag another panel below the first panel and give it an id of ```panelTable```. This panel will hold our GitHub users and this is the html code for the table:
 
 ```html
 <table id="tableUserList" class="display table table-striped table-bordered" width="100%" >
 
 </table>
 ``` 
+
+This is how the Dynaform design will look like:
 
 ![image](https://user-images.githubusercontent.com/22425217/90296523-a9daeb00-de83-11ea-9f68-ed2c6af1b74c.png)
 
@@ -229,7 +230,7 @@ function getList(tableObject) {
 
 ```
 
-Next, let us attach a click event to the buttons. The ```nth-child()``` selector targets the column number on the table and the buttons are on the second and third columns
+Next, let us attach a click event to the buttons. The ```nth-child()``` selector targets the column number on the table and the buttons are on the first and second columns on the table
 
 
 ```javascript
@@ -254,5 +255,5 @@ $('#tableUserList tbody').on( 'click', 'td:nth-child(2)', function () {
 
 ```
 
-This is how the table will now appear:
+This is how the table will now appear with the buttons:
 ![image](https://user-images.githubusercontent.com/22425217/90299304-79984a00-de8d-11ea-9a91-c4f06f8e0e52.png)
