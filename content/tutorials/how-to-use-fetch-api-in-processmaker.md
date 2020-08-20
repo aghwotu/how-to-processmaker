@@ -102,7 +102,7 @@ let trig_uid; 	// set to the ID of the trigger
 function showOutput(res) {
 
   document.getElementById('resultPanel').innerHTML = `
-		<pre>${JSON.stringify(res)}</pre>
+		<pre>${JSON.stringify(res, null, 2)}</pre>
   `;
 
 }
