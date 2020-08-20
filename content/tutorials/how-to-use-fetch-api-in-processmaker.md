@@ -1,7 +1,7 @@
 ---
 title: "How to Use Fetch Api in Processmaker"
 date: 2020-08-15T23:09:18+01:00
-draft: true
+draft: 
 ---
 
 When trying to use the fetch api to make an ajax call in ProcessMaker, we need to consider if we are making the call to a trigger or not. We shall be looking at both instances where: 
