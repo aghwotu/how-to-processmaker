@@ -10,4 +10,6 @@ pre = "<b>4. </b>"
 
 # GENERAL GUIDE
 
-Some helpful links for [ProcessMaker](https://www.processmaker.com/)
+Some helpful links to carry out tasks in [ProcessMaker](https://www.processmaker.com/)
+
+The unofficial documentation that contains [tips, code, forms, processes, and plugins for ProcessMaker 3](https://www.pmusers.com/index.php/Main_Page)
