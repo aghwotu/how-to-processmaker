@@ -8,6 +8,14 @@ pre = "<b>7. </b>"
 
 ### Chapter 7
 
-# Some Chapter title
+# Best Practices
 
-Lorem Ipsum.
+{{% notice note %}}
+This is for ProcessMaker version 3
+{{% /notice %}}
+
+This is the official documentation of [ProcessMaker Best Practices](https://wiki.processmaker.com/Best_Practices/)
+
+These are the best practices I've found when using ProcessMaker
+
+1. Use a single dynaform as much as possible
