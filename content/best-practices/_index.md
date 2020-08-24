@@ -18,4 +18,4 @@ This is the official documentation of [ProcessMaker Best Practices](https://wiki
 
 These are the best practices I've found when using ProcessMaker
 
-1. Use a single dynaform as much as possible
+1. Use a single dynaform as much as possible and for each step of the process, you can hide and show the form elements based on who is acting on the form
