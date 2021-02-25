@@ -232,6 +232,8 @@ We will enter the id of the user we want to fetch into this texbox.
 
 10. The last form control we shall drag onto the form is a panel which will display the user information that we fetch from the API.
 This panel will have an ```id``` of ```panelUserResult``` and a border of zero - 0. The content for this panel is:
+
+
 ```html
 
 <div class="panel panel-default" id="resultPanel" style="height: 100px">
