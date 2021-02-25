@@ -207,6 +207,7 @@ The panel on the right will hold the result of our Todos request with an id of `
 ```
 
 7. For the next steps, we shall add the form controls for the third use case. First, below the panels with ids ```panelPostsResult``` and ```panelTodosResult``` , we will add another panel and give it an id of ```panelUserTitle``` . This will serve as the title for our next section and it will have a border of zero - 0 and the content for it is:
+
 ```html
 
 <div style="background:#286090; 
